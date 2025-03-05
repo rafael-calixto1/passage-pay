@@ -1,3 +1,5 @@
+// index.js
+
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -17,6 +19,7 @@ app.use('/api/employees', employeeRoutes);
 app.use('/api/companies', companyRoutes);
 app.use('/api/calculations', passageRoutes);
 
+// Iniciando o servidor
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
